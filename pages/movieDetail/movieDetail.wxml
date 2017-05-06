@@ -1,0 +1,19 @@
+<view class="box">
+    <view class="nav">
+        电影频道》电影详情
+    </view>
+    <view class="detail">
+        <view class="title">{{movieDetail.title}}</view>
+        <view class="xinxi">
+            <image src="{{movieDetail.src}}"></image>
+            <view class="message"><span>详 情：</span>{{movieDetail.message}}</view>
+        </view>
+        <view class="watch">
+            <view class="guankan" bindtap="guankan" >观看影片片段</view>
+        </view>
+        <view class="intro">
+            <view class="introTitle">{{movieDetail.title}}的剧情简介</view>
+            <view class="content">   {{movieDetail.intro}}</view>
+        </view>
+    </view>
+</view>

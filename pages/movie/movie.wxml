@@ -1,0 +1,13 @@
+<!--<scroll-view  scroll-y="true" style="height: {{scrollHeight}}px" bindtap="playMusic" bindscrolltoupper="upper" bindscrolltolower="lower">-->
+<view class="content">
+    <view class="headerTitle">
+        经典电影
+    </view>
+    <view class="movieList" >
+        <view class="movieitem" wx:for="{{movieList}}" wx:key="{{index}}" >
+            <image src="{{item.src}}" bindtap="showdetail" data-id="{{item.id}}"></image>
+            <view class="title">{{item.title}}<span>{{item.rating}}</span></view>
+        </view>
+    </view>
+</view>
+<!--</scroll-view>-->

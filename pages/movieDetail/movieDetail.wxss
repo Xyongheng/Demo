@@ -1,0 +1,58 @@
+@import "../../public/wxss/public.wxss";
+
+.box{
+    padding: 26rpx;
+}
+
+.nav{
+    font-size: 26rpx;
+    color: #3377aa;
+    padding: 12rpx;
+}
+.title{
+    border-top: 1px solid #ccc;
+    padding: 20rpx;
+    font-size: 42rpx;
+}
+.xinxi{
+    display: flex;
+    height: 360rpx;
+    overflow: hidden;
+}
+.xinxi image{
+    width: 40%;
+    height: 360rpx;
+}
+.xinxi .message{
+    width: 58%;
+    box-sizing: border-box;
+    padding-left: 26rpx;
+    line-height: 50rpx;
+    font-size: 32rpx;
+    color: #666;
+}
+.xinxi .message span{
+    color: #0f3246
+}
+.watch{
+    padding: 30rpx 40rpx 0 0;
+    text-align: right;
+}
+.watch .guankan{
+    display: inline-block;
+    padding: 12rpx 26rpx;
+    border: 2rpx solid #d81e06;
+    color: #3377aa;
+    border-radius: 10rpx;
+    font-size: 28rpx;
+}
+.introTitle{
+    padding: 40rpx 0 26rpx 0; 
+    font-size: 34rpx;
+    color: #bbb;
+}
+.content{
+    line-height: 38rpx;
+    font-size: 30rpx;
+    color: #555;
+}

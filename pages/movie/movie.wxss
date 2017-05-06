@@ -1,0 +1,33 @@
+@import "../../public/wxss/public.wxss";
+.headerTitle{
+    font-size: 50rpx;
+    border-left: 6rpx solid #d81e06;
+    padding-left: 24rpx;
+    height: 58rpx;
+    margin: 20rpx;
+    margin-left: 0;
+   
+}
+.movieList{
+    display: flex;
+    flex-wrap:wrap;
+}
+.movieitem{
+    box-sizing: border-box;  
+    overflow: hidden;
+    margin: 2%;
+    width: 28%;
+    font-size: 26rpx;
+    height: 450rpx;
+}
+.movieitem image{
+    height: 360rpx;
+    width: 100%;
+}
+.movieitem .title{
+    color: #3377aa;
+}
+.movieitem .title span{
+    padding-left:20rpx;
+    color: #e09015;
+}

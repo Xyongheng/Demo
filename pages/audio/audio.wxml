@@ -1,0 +1,38 @@
+<view class="musicAudio">
+    <audio 
+    poster="{{music.poster}}" 
+    name="{{music.name}}" 
+    author="{{music.author}}" 
+    src="{{music.src}}"
+    id="myAudio"  
+    bindended="nextSong"  
+    bindtimeupdate="pro" 
+    bindplay="kaishi" 
+    bindpause="zanting"
+    controls>
+    </audio>
+</view>
+<view class="geci">{{show}}</view>
+<progress percent="{{jindu}}" color="red" />
+<view class="tools">
+    <image bindtap="inASong"  src="../../public/image/icon/inASong.png"></image>
+    <image bindtap="audioPlay"  src="{{bofang}}"></image>
+    <image bindtap="nextSong"  src="../../public/image/icon/nextSong.png"></image>
+    <image bindtap="kuaijin"  src="../../public/image/icon/speed.png"></image>
+</view>
+
+<scroll-view  scroll-y="true" style="height: {{scrollHeight}}px" >
+    <view wx:for="{{musicList}}"
+     wx:for-item="music" 
+     wx:for-index="idx"    
+     wx:key="{{idx}}"
+     class="music">
+        <view class="musicPoster">
+            <image src="{{music.poster}}" data-idx="{{idx}}" bindtap="playMusic" data-id="idx"></image>
+        </view>
+        <view class="rightMusic">
+            <view class="musicName">{{music.name}}</view>
+            <view class="musicAuthor">歌手：{{music.author}}</view>
+        </view>
+     </view>
+</scroll-view>

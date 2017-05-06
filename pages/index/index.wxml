@@ -1,0 +1,41 @@
+
+<view class="content">
+  <swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" width="355" height="150"/>
+      </swiper-item>
+    </block>
+  </swiper>
+  
+  <!--<view class="movie">
+    <view class="movieTitle">最近热播影片 ></view>
+    <view class="movieList" >
+        <view class="movieitem" wx:for="{{movieList}}" wx:key="{{index}}" >
+            <image src="{{item.src}}" bindtap="showdetail" data-id="{{item.id}}"></image>
+            <view class="title">{{item.title}}<span>{{item.rating}}</span></view>
+        </view>
+    </view>
+  </view>-->
+  <view class="movie">
+    <view class="movieTitle">热播歌曲 </view>
+      <scroll-view scroll-x="true" style=" white-space: nowrap; display: flex" >
+        <view class="movieitem" wx:for="{{musicList}}" wx:key="{{index}}" >
+            <image src="{{item.poster}}" data-idx="{{item.id}}" bindtap="playMusic" data-id="{{item.id}}"></image>
+            <view class="title">{{item.name}}<span>{{item.rating}}</span></view>
+        </view>
+      </scroll-view>
+  </view>
+  <view class="movie">
+    <view class="movieTitle">最近热播影片 </view>
+      <scroll-view scroll-x="true" style=" white-space: nowrap; display: flex" >
+        <view class="movieitem" wx:for="{{movieList}}" wx:key="{{index}}" >
+            <image src="{{item.src}}" data-id="{{item.url}}" bindtap="showMovie" data-id="{{item.id}}"></image>
+            <view class="title">{{item.title}}<span>{{item.rating}}</span></view>
+        </view>
+      </scroll-view>
+  </view>
+  
+  
+</view>

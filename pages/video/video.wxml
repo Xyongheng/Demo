@@ -1,0 +1,23 @@
+<view class="nav">电影频道》电影详情》视频放映</view>
+<view class="zhong">
+  
+    <view class="page-section tc">
+      <video id="myVideo" src="{{videoUrl}}" binderror="videoErrorCallback" danmu-list="{{danmuList}}" enable-danmu danmu-btn controls></video>
+
+      <view class="weui-cells">
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+            <view class="weui-label">弹幕内容</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input bindblur="bindInputBlur" class="weui-input" type="text" placeholder="在此处输入弹幕内容" />
+            <view bindtap="bindSendDanmu" class="button">发送></view>
+          </view>
+        </view>
+      </view>
+      <view class="btn-area">
+        <navigator url="/pages/movie/movie" open-type="switchTab" hover-class="other-navigator-hover">回到电影列表</navigator>
+      </view>
+    </view>
+
+</view>

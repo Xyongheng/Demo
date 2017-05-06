@@ -1,0 +1,40 @@
+@import "../../public/wxss/public.wxss";
+
+.zhong{
+    padding: 20rpx;
+}
+video{
+    width: 100%;
+}
+.nav{
+    font-size: 26rpx;
+    color: #3377aa;
+    padding: 20rpx;
+}
+
+.weui-label{
+    font-size: 30rpx;
+    padding: 10rpx 0;
+}
+
+.weui-cell__bd{
+    display: flex;
+}
+.weui-cell__bd input{
+    flex: 84%;
+}
+.weui-cell__bd .button{
+    width: 16%;
+    
+    border-radius: 8rpx;
+    box-sizing: border-box;
+    padding: 16rpx 16rpx 10rpx;
+    color: #fff;
+    background-color: #4499aa;
+}
+.btn-area{
+    text-align: right;
+    padding-top: 60rpx;
+    font-size: 32rpx;
+    color: #3377aa;
+}
